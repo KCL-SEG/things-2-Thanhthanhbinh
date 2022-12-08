@@ -5,8 +5,8 @@ from .models import Thing
 class ThingForm(forms.ModelForm):
     class Meta:
         model= Thing
-        fields = ['name', 'description', 'quanity']
+        fields = ['name', 'description', 'quantity']
         widgets = {
             'description': forms.Textarea(),
-            'quanity': forms.NumberInput()
+            'quantity': forms.NumberInput()
         }
