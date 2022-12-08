@@ -4,7 +4,7 @@ from .models import Thing
 # Create your forms here.
 class ThingForm(forms.ModelForm):
     class Meta:
-        model: Thing
+        model= Thing
         fields = ['name', 'description', 'quanity']
         widgets = {
             'description': forms.Textarea(),
